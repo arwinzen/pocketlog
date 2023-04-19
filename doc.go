@@ -1,0 +1,7 @@
+/** 
+* Package pocketlog
+*
+**/
+
+package pocketlog
+
