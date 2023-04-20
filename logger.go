@@ -27,7 +27,7 @@ func New(threshold Level, opts ...Option) *Logger {
 // logf prints the message to the output
 // Add decorations here, if any.
 func (l *Logger) logf(format string, args ...any) {
-    _, _ = fmt.Printf(format + "\n", args...)
+    _, _ = fmt.Fprintf(l.output, format + "\n", args...)
 }
 
 // Debugf formats and prints a message if the log level is debug or higher
