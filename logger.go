@@ -19,7 +19,6 @@ func New(threshold Level, opts ...Option) *Logger {
     lgr := &Logger{threshold: threshold, output: os.Stdout}
 
     for _, configFunc := range opts {
-        fmt.Println(configFunc)
         configFunc(lgr)
     }
     return lgr
