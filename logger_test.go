@@ -1,7 +1,7 @@
 package pocketlog_test
 
 import (
-	"pocketlog"
+	"github.com/arwinzen/pocketlog"
 )
 
 func ExampleLogger_Debugf() {
